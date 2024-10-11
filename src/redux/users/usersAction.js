@@ -22,12 +22,12 @@ export const receiveUserError=(error)=>{
 }
 
 export const getUsers=()=>{
-   return(dispatch)=>{
-    dispatch(sendUserRequest())
-    jsAxios.get(`/users`).then(res=>{
-        dispatch(receiveUserResponse(res.data))
-    }).catch(error=>{
-        dispatch(receiveUserError(error.message))
-    })
-   }
+    return(dispatch)=>{
+        dispatch(sendUserRequest())
+        jsAxios.get(`/users`).then(res=>{
+            dispatch(receiveUserResponse(res.data))
+        }).catch(error=>{
+            dispatch(receiveUserError(error.message))
+        })
+    }
 }

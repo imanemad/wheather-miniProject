@@ -1,14 +1,12 @@
 import { Provider } from "react-redux";
-import Users from "./Users";
-import store from "../redux/store";
-
+import Weather from "../Page/Weather";
+import { storeWeather } from "../redux/storeWeather";
 
 function App() {
   return (
-    <Provider store={store}>
-
+    <Provider store={storeWeather}>
       <div >
-        <Users/>
+        <Weather/>
       </div>
     </Provider>
   );

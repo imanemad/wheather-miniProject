@@ -32,8 +32,8 @@ const Users = () => {
                                 <tr key={u.id}>
                                     <td>{u.id}</td>
                                     <td>{u.name}</td>
-                                    <td>{u.username}</td>
-                                    <td>{u.email}</td>
+                                    <td className="d-md">{u.username}</td>
+                                    <td className="d-md">{u.email}</td>
                                 </tr>
                             ))
                         }
